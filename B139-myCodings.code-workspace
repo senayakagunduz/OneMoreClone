@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../B139-myCodings"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "consultancy-website-template"
+	}
+}
