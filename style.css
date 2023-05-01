@@ -237,7 +237,23 @@ nav.navbar,.first-navbar{
     -o-transform: translate(-50%);
     text-align: center;
 }
-
+.cards-group .card{
+    transition:transform 0.3s ease;
+    -webkit-transition:transform 0.3s ease;
+    -moz-transition:transform 0.3s ease;
+    -ms-transition:transform 0.3s ease;
+    -o-transition:transform 0.3s ease;
+    cursor:pointer;
+    min-height: 150px;
+    width: auto;
+}
+.cards-group .card:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
 .home .kesfet{
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -270,6 +286,46 @@ nav.navbar,.first-navbar{
        font-size: 28px!important; 
     }  
 }
+/*******section one-more-promotionr********/
+#spin {
+    color:red;
+  }
+  #spin:after {
+    content:"";
+    animation: spin 7s linear infinite;
+    -webkit-animation: spin 7s linear infinite;
+}
+  @keyframes spin {
+    0% { content:"Ailendir"; color:red;}
+    10% { content:"İşindir"; color:green;}
+    20% { content:"Geleceğindir"; color:blue;}
+    30% { content:"Kahkahalarındır";}
+    40% { content:"Mutluluğundur";}
+    50% { content: "Prestijindir";}
+    60% { content: "Hayallerindir";}
+    70% { content: "Dünyandır";}
+    80% { content: "Kariyerindir";}
+    90% { content: "Evindir";}
+  }
+  .slider-text{
+    background-color: white;
+  }
+  .slider-text p{
+    font-size: 36px;
+    color:lightgray;
+    font-weight: 700;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  .user-exp{
+    background-color: #e8e8e8;
+    margin:0 15px;
+    padding:32px 62px 32px;
+  }
+  .user-exp .fa-user{
+    font-size: 16px;
+  }
+/***************************************/
 
 /*************homepage ends***************/
 /*******Footer************/
