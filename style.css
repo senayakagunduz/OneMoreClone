@@ -2,6 +2,8 @@
     --color1:#C61F1F;
     --color2:#d82222;
     --color3:#fff;
+    --color4:#e8e8e8;
+    --color5:#495057;
 }
 
 body{
@@ -162,7 +164,10 @@ nav.navbar,.first-navbar{
   background: #fff ;  
 }
 .first-navbar.sticky ul li a{
-    color: #3e4246 !important;;
+    color: #3e4246 !important;
+}
+.first-navbar.sticky ul li a .bi-search{
+    color: #3e4246 !important;
 }
 .first-navbar {
     display: block;
@@ -176,9 +181,9 @@ nav.navbar,.first-navbar{
     padding:0;
     margin:0;
 }
-.second-navbar{
+/* .second-navbar{
     padding: 0!important;
-}
+} */
 .second-navbar .navbar-toggler{
     border:none!important;
 }
@@ -201,6 +206,10 @@ nav.navbar,.first-navbar{
     .container-fluid .topbar{
         display: none;
     }
+    /* .second-navbar .navbar-brand img .logo{
+        height:20px!important;
+        width: auto!important;
+    } */
   }
 
 /****************navbar ends***************/
@@ -221,11 +230,7 @@ nav.navbar,.first-navbar{
     height:100%;
     background: rgb(37 37 125 / 82%);
  }
- /* section div.cards-group .border-top{
-    color: #C61F1F!important;
-    color:rgba(255, 255, 255, 0.5) !important;
 
-} */
 .home{
     position: absolute;
     top:30%;
@@ -237,23 +242,7 @@ nav.navbar,.first-navbar{
     -o-transform: translate(-50%);
     text-align: center;
 }
-.cards-group .card{
-    transition:transform 0.3s ease;
-    -webkit-transition:transform 0.3s ease;
-    -moz-transition:transform 0.3s ease;
-    -ms-transition:transform 0.3s ease;
-    -o-transition:transform 0.3s ease;
-    cursor:pointer;
-    min-height: 150px;
-    width: auto;
-}
-.cards-group .card:hover{
-    transform:scale(1.1);
-    -webkit-transform:scale(1.1);
-    -moz-transform:scale(1.1);
-    -ms-transform:scale(1.1);
-    -o-transform:scale(1.1);
-}
+
 .home .kesfet{
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -281,12 +270,78 @@ nav.navbar,.first-navbar{
     font-weight: 700;
     color: #fff !important;;
 }
-@media screen and (max-width:767px) {
-    .home h1{
-       font-size: 28px!important; 
-    }  
+@media screen and (max-width:992px) {
+    .home .container span{
+        font-size: 20px!important;
+    }
+    .home .container h1{
+        font-size: 30px!important; 
+    }
+    .home .kesfet{
+        font-size: 20px;
+    }
 }
-/*******section one-more-promotionr********/
+/*****Services******/
+.services{
+   background-color: var(--color4)!important;
+   padding:5%;
+}
+.cards-group .card{
+    cursor:pointer;
+    min-height: 150px;
+    width: auto;
+    transition:transform 0.3s ease;
+    -webkit-transition:transform 0.3s ease;
+    -moz-transition:transform 0.3s ease;
+    -ms-transition:transform 0.3s ease;
+    -o-transition:transform 0.3s ease;  
+}
+.cards-group .card:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.cards-group .card-body h3{
+    font-weight: 700;
+    color:#000838;
+}
+@media screen and (max-width:1200px){
+    .cards-group .card-body h3{
+        font-size: 1rem;
+    }
+    
+}
+.card{
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index:0;
+}
+.card img{
+    object-fit: cover;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.2; 
+}
+.cards-group .card{
+    position: relative;
+    z-index:98;
+}
+.cards-group .card .card-body{
+   position: absolute;
+   background-blend-mode: multiply; 
+}
+.cards-group .card .card-body h3{
+    color: rgb(50, 56, 113);
+    font-weight: 900; 
+}
+.cards-group .card .card-body p{
+    font-size: 18px;
+    font-weight: 700;
+}
+/************/
+/*******section one-more-promotion********/
 #spin {
     color:red;
   }
@@ -296,16 +351,16 @@ nav.navbar,.first-navbar{
     -webkit-animation: spin 7s linear infinite;
 }
   @keyframes spin {
-    0% { content:"Ailendir"; color:red;}
-    10% { content:"İşindir"; color:green;}
+    0% { content:"Ailendir"; color:rgb(255, 98, 0);}
+    10% { content:"İşindir"; color:red;}
     20% { content:"Geleceğindir"; color:blue;}
-    30% { content:"Kahkahalarındır";}
-    40% { content:"Mutluluğundur";}
-    50% { content: "Prestijindir";}
-    60% { content: "Hayallerindir";}
-    70% { content: "Dünyandır";}
-    80% { content: "Kariyerindir";}
-    90% { content: "Evindir";}
+    30% { content:"Kahkahalarındır";color:slateblue}
+    40% { content:"Mutluluğundur";color:palevioletred}
+    50% { content: "Prestijindir";color:rgba(67, 188, 67, 0.657);}
+    60% { content: "Hayallerindir";color:red;}
+    70% { content: "Dünyandır";color:rgb(143, 211, 54);}
+    80% { content: "Kariyerindir";color:rgb(182, 29, 105);}
+    90% { content: "Evindir";color:blueviolet}
   }
   .slider-text{
     background-color: white;
@@ -322,12 +377,83 @@ nav.navbar,.first-navbar{
     margin:0 15px;
     padding:32px 62px 32px;
   }
-  .user-exp .fa-user{
-    font-size: 16px;
+  .user-exp i[class^="fa-"]{
+    color:var(--color2);
   }
-/***************************************/
-
+  .user-exp .flex-column span{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--color5)!important;
+  }
+  @media screen and (max-width:992px) {
+    .user-exp .flex-column span{
+        font-size: 1rem; 
+    }
+  }
+  @media screen and (max-width:768px) {
+    .user-exp .flex-column span{
+        font-size: 0.8rem; 
+    }
+  }
+  @media screen and (max-width:576px) {
+    .user-exp .flex-column span{
+        font-size: 0.5rem; 
+    }
+  }
+/*************global brand starts*******************/
+.global-brand h4{
+    font-weight: 700!important;
+}
+.global-brand h2{
+    color:var(--color5)!important;
+    font-weight: 700!important;
+}
+@media screen and (max-width:992px) {
+    .global-brand .d-block{
+        margin-bottom: 10px;
+    }
+}
+/************global brand ends********************/
+/***************products************************/
+section .products{
+    background-color: #F6F6F6;
+}
+.carousel-inner .card img{
+    opacity: 1!important;
+}
+@media (min-width: 768px) {
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 25%;
+      display: block;
+    }
+  }
+  .carousel-inner{
+    padding: 1em;
+}
+.card{
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /*************homepage ends***************/
+/******touchyourlife starts********/
+
+/******touchyourlife ends********/
+
 /*******Footer************/
 footer{
     background-color:rgb(8,35,101);

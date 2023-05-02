@@ -24,7 +24,8 @@
 
 <body>
     <div class="overlay-containerr">
-        <div class="overlay"></div>
+        <div class="overlay">
+        </div>
         <!-- Topbar Start -->
         <div class="container-fluid topbar">
             <div class="row px-5">
@@ -57,38 +58,14 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Ana Sayfa</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Kurumsal
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Tarihçemiz</a></li>
-                                <li><a class="dropdown-item" href="#">Yönetim Kurulu</a></li>
-                                <li><a class="dropdown-item" href="#">Küresel Ağımız</a></li>
-                                <li><a class="dropdown-item" href="#">Sertifikamız</a></li>
-                                <li><a class="dropdown-item" href="#">Şirket ilkelerimiz</a></li>
-                                <li><a class="dropdown-item" href="#">Sosyal Sorumluluk</a></li>
-                                <li><a class="dropdown-item" href="#">Müdürlüklerimiz</a></li>
-                            </ul>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Ürünler</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Etkinlikler</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Yayınlar
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Dergimiz</a></li>
-                                <li><a class="dropdown-item" href="#">Temsilcinin El Kitabı</a></li>
-                                <li><a class="dropdown-item" href="#">Formlar</a></li>
-                            </ul>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">İletişim</a>
                         </li>
@@ -106,11 +83,10 @@
         <nav class="second-navbar navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="logo" src="./img/c3.png" alt=""></a>
-                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                  </button>
+               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -168,37 +144,44 @@
         </div>
 
         <!-- <div class="border-top m-0 p-0"></div> -->
-
-        <div class="row cards-group d-flex justify-content-between ">
-            <div class="d-block col-md-3">
-                <div class="card mb-3"><!--buraya backgroud resmi gireceksin-->
-                    <div class="card-body"><!--buraya overlay classı-->
-                        <h5 class="card-title">Vizyon/Misyon</h5>
-                        <p class="card-text">Detaylı Bilgi</p>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="row cards-group d-flex justify-content-between ">
+                <div class="bg-service d-block col-md-3 d-flex">
+                    <div class="card card-1 mb-3 flex-column justify-content-center">
+                        <img src="./img/city.jpeg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Vizyon/Misyon</h3>
+                            <p class="card-text">Detaylı Bilgi</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-block col-md-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Ürünlerimiz</h5>
-                        <p class="card-text">Detaylı Bilgi</p>
+                <div class="d-block col-md-3 d-flex">
+                    <div class="card card-3 mb-3 flex-column justify-content-center">
+                        <img src="./img/products.jpeg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Etkinliklerimiz</h3>
+                            <p class="card-text">Detaylı Bilgi</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-block col-md-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Etkinliklerimiz</h5>
-                        <p class="card-text">Detaylı Bilgi</p>
+                <div class="d-block col-md-3 d-flex">
+                    <div class="card card-3 mb-3 flex-column justify-content-center">
+                        <img src="./img/hyt.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Etkinliklerimiz</h3>
+                            <p class="card-text">Detaylı Bilgi</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-block col-md-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Değerlerimiz</h5>
-                        <p class="card-text">Detaylı Bilgi</p>
+                <div class="d-block col-md-3 d-flex">
+                    <div class="card card-4 mb-3 flex-column justify-content-center">
+                        <img src="./img/book.jpeg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Değerlerimiz</h3>
+                            <p class="card-text">Detaylı Bilgi</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,24 +193,24 @@
                 <!-- <h4 class="text-center">One More International Senin Geleceğindir</h4> -->
                 <p class="text-center">One More International Senin <span id="spin"></span></p>
             </div>
-            <div class="user-exp col-12 d-flex justify-content-around ">
-                <div>
-                   <i class="fa-solid fa-user"></i>
-                   <span>+10M</span>
-                   <span>Ürün Kullanıcısı</span>
+            <div class="user-exp  d-flex justify-content-around py-5">
+                <div class="d-block col-md-3 d-flex flex-column justify-content-between align-items-center gap-3">
+                    <i class="fa-solid fa-user fs-2"></i>
+                    <span>+10M</span>
+                    <span>Ürün Kullanıcısı</span>
                 </div>
-                <div>
-                    <i class="fa-solid fa-paper-plane"></i>
+                <div class="d-block col-md-3 d-flex flex-column justify-content-between align-items-center">
+                    <i class="fa-solid fa-paper-plane  fs-2"></i>
                     <span>+100</span>
                     <span>Ülkeye Mikro İhracat</span>
                 </div>
-                <div>
-                    <i class="fa-solid fa-user-check"></i>
+                <div class="d-block col-md-3 d-flex flex-column justify-content-between align-items-center">
+                    <i class="fa-solid fa-check  fs-2"></i>
                     <span>%98</span>
                     <span>Müşteri Memnuniyeti</span>
                 </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
+                <div class="d-block col-md-3 d-flex flex-column justify-content-between align-items-center">
+                    <i class="fa-solid fa-check-double  fs-2"></i>
                     <span>14</span>
                     <span>Ürün Sayısı</span>
                 </div>
@@ -235,16 +218,153 @@
         </div>
     </section>
     <section class="products">
-        <div class="col-12 bg-success text-center">
-            <h2>Ürünleri Keşfet</h2>
-            <span>One More International ürünleri ile tanışmanın şimdi tam zamanı! Muhteşem ürünler sizi bekliyor</span>
-            <span>#KendineVeYaşamaİyiBak</span>
-            <div class="slider">
-                bu kısma resimler gelecek
+        <div class="col-12 text-center mt-5">
+            <h2 class="fs-1">Ürünleri Keşfet</h2>
+            <span class="fs-5">One More International ürünleri ile tanışmanın şimdi tam zamanı! Muhteşem ürünler sizi
+                bekliyor</span>
+            <p class="fs-5">#KendineVeYaşamaİyiBak</p>
+
+            <div class="slider  d-flex align-items-center justify-content-between">
+                <div class="container">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mb-3">
+                                    <img src="./img/product-b12.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/product-antiaging.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/product-bant.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/product-dekamin.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/product-hair.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/product-melotonin.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+    
+                                <div class="card mb-3">
+                                    <img src="./img/night-gentleman.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/omevia.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <img src="./img/night.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
-
+    
+    <section class="touchyourlife text-center" style="background-color:#102855">
+        <p class="text-light pt-5"><i class="fa-solid fa-cubes fs-1"></i></p>
+        <h1 class="text-light">#touchyourlife</h1>
+        <p class="text-light pt-3">One More International’ın sunduğu diğer hizmetleri keşfedin.<br>
+            Lumiere by One More ile kozmetik ürünler hakkında daha fazla bilgiye ulaşabilir, One More Shop’tan <br>
+            logolu
+            ürünleri satın alabilir ve One More Visual’dan sizler için hazırladığımız tasarımlara, baskılara
+            ulaşabilirsiniz.</p>
+        <div class="container py-5">
+            <div class="row cards-group d-flex justify-content-between ">
+                <div class="bg-service d-block col-md-4 d-flex">
+                    <div class="card card-1 mb-3 flex-column justify-content-center">
+                        <img src="./img/city.jpeg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Lumiere By One More</h3>
+                            <p class="card-text">Ziyaret Edin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block col-md-4 d-flex">
+                    <div class="card card-3 mb-3 flex-column justify-content-center">
+                        <img src="./img/hyt.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">One More Shop</h3>
+                            <p class="card-text">Ziyaret Edin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block col-md-4 d-flex">
+                    <div class="card card-3 mb-3 flex-column justify-content-center">
+                        <img src="./img/book.jpeg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">One More Visual</h3>
+                            <p class="card-text">Ziyaret Edin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="global-brand ">
+        <h2 class="text-center p-5">#onemoreisaglobalbrand</h2>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="d-block col-lg-6 h-50">
+                    <div class="card text-bg-dark">
+                        <img src="./img/city.jpeg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h4 class="card-title">Basında Biz</h4>
+                          <p class="card-text">One More International</p>
+                          <p class="card-text"><small>Detaylı bilgi için tıklayın</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block col-lg-6">
+                    <div class="card text-bg-dark">
+                        <img src="./img/book.jpeg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h4 class="card-title">Basında Biz</h4>
+                          <p class="card-text">Detaylı bilgi için tıklayın</p>
+                          <p class="card-text"><small>One More International</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="p-0 m-0">
         <div class="container">
             <section class="social-media">
@@ -306,10 +426,11 @@
                             <li><a href="#"><i class="fa-solid fa-at me-2"></i>info@onemoreglobal.com</a></li>
                             <li><a href="#">Temsilcinin El Kitabı</a></li>
                             <li><a href="#">Dergimiz</a></li>
-                            <li class="last-el"><a class=""><i class="fa-solid fa-user-large"></i>Harita Konumunu
-                                    Bul</a></li>
+                            <li class="last-el">
+                                <a class="text-light"><i class="fa-solid fa-user-large"></i>
+                                Harita Konumunu Bul</a>
+                            </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -329,7 +450,8 @@
                 logo.src = 'img/onemore-logo.png';
             }
         })
-    </script>
+        const multipleCardCarousel = document.querySelector("#carouselExampleControls");
+</script>
     <!-- Home Page End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
