@@ -145,8 +145,6 @@ div.topbar{
 .first-navbar .dropdown-menu .dropdown-item{
     color:rgb(65, 64, 64);
     font-size: 14px;
-    /* padding-bottom:3px;
-    padding-right:5px; */
 }
 nav.navbar,.first-navbar{
     position: fixed;
@@ -158,6 +156,12 @@ nav.navbar,.first-navbar{
     align-items: center;
     padding:40px 100px; 
     z-index:10000;
+}
+@media screen and (max-width:992px) {
+    nav.navbar,.second-navbar{
+        padding:15px 100px;
+        z-index:10001;  
+    }
 }
 .first-navbar.sticky{
   padding:5px 100px;
@@ -181,9 +185,6 @@ nav.navbar,.first-navbar{
     padding:0;
     margin:0;
 }
-/* .second-navbar{
-    padding: 0!important;
-} */
 .second-navbar .navbar-toggler{
     border:none!important;
 }
@@ -421,6 +422,9 @@ section .products{
 .carousel-inner .card img{
     opacity: 1!important;
 }
+section .products .card img{
+    opacity: 1;
+}
 @media (min-width: 768px) {
     .carousel-inner {
       display: flex;
@@ -449,6 +453,8 @@ section .products{
     top: 50%;
     transform: translateY(-50%);
 }
+/***********************************/
+
 /*************homepage ends***************/
 /******touchyourlife starts********/
 
