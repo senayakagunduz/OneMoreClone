@@ -164,14 +164,15 @@ nav.navbar,.first-navbar{
     }
 }
 @media screen and (max-width:512px) {
-    nav.navbar .second-navbar{
-        padding:8px 60px;
+    .second-navbar{
+        padding:10px 60px;
         z-index:10001;  
     }
 }
-@media screen and (max-width:336px) {
-    nav.navbar .second-navbar nav.logo{
-        display: none; 
+@media screen and (max-width:417px) {
+    nav.navbar,.second-navbar{
+        padding:8px 50px;
+        z-index:10001;  
     }
 }
 .first-navbar.sticky{
