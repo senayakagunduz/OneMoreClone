@@ -411,6 +411,7 @@ nav.navbar,.first-navbar{
   @media screen and (max-width:576px) {
     .user-exp .flex-column span{
         font-size: 0.5rem; 
+        text-align: center;
     }
   }
 /*************global brand starts*******************/
