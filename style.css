@@ -163,6 +163,17 @@ nav.navbar,.first-navbar{
         z-index:10001;  
     }
 }
+@media screen and (max-width:512px) {
+    nav.navbar .second-navbar{
+        padding:8px 60px;
+        z-index:10001;  
+    }
+}
+@media screen and (max-width:336px) {
+    nav.navbar .second-navbar nav.logo{
+        display: none; 
+    }
+}
 .first-navbar.sticky{
   padding:5px 100px;
   background: #fff ;  
