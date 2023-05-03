@@ -398,6 +398,12 @@ nav.navbar,.first-navbar{
     font-weight: 900;
     color: var(--color5)!important;
   }
+  @media screen and (min-width:992px) {
+    .user-exp .flex-column span{
+        font-size: 1rem;
+        text-align: center;
+    }
+  }
   @media screen and (max-width:992px) {
     .user-exp .flex-column span{
         font-size: 1rem; 
